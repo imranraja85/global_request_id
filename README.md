@@ -1,8 +1,6 @@
 # GlobalRequestId
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/global_request_id`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+GlobalRequestId makes your X-REQUEST-ID globally avaiable during your http request. This makes your request id accessible during the execution of your business logic which may be invoking another service where you need to pass in the request id
 
 ## Installation
 
@@ -22,7 +20,7 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+`GlobalRequestId.retrieve` should retrieve the X-REQUEST-ID
 
 ## Development
 
