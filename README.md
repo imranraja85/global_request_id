@@ -1,6 +1,6 @@
 # GlobalRequestId
 
-GlobalRequestId makes your X-REQUEST-ID globally avaiable during your http request. This makes your request id accessible during the execution of your business logic which may be invoking another service where you need to pass in the request id
+GlobalRequestId is a rails gem that makes your correlation id (X-REQUEST-ID) globally avaiable during your entire http request. The primary use case this fulfills is this makes your correlation id known and accessible during the execution of your business logic. This is of particular importance when invoking services where you would like to forward the request id as a header to your other services for some distributed tracing goodness.
 
 ## Installation
 
@@ -22,6 +22,11 @@ Or install it yourself as:
 
 `GlobalRequestId.retrieve` should retrieve the X-REQUEST-ID
 
+## Inspired by..
+
+This gem was inspired 'Building Microservices' by Sam Newman.
+And uses [the request_store gem](https://github.com/steveklabnik/request_store) for thread local storage.
+
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
@@ -36,4 +41,3 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/[USERN
 ## License
 
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
-
