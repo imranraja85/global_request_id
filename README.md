@@ -20,7 +20,7 @@ Or install it yourself as:
 
 ## Usage
 
-`GlobalRequestId.retrieve` should retrieve the X-REQUEST-ID
+`GlobalRequestId.get` returns the X-REQUEST-ID value
 
 ## Todos
  * add tests
