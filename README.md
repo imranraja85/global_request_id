@@ -1,4 +1,4 @@
-# GlobalRequestId
+# Global Request Id
 
 GlobalRequestId is a rails gem that makes your correlation id (X-REQUEST-ID) globally avaiable during your entire http request. The primary use case this fulfills is this makes your correlation id known and accessible during the execution of your business logic. This is of particular importance when invoking services where you would like to forward the request id as a header to your other services for some distributed tracing goodness.
 
@@ -21,6 +21,10 @@ Or install it yourself as:
 ## Usage
 
 `GlobalRequestId.retrieve` should retrieve the X-REQUEST-ID
+
+## Todos
+ * add tests
+ * add sidekiq middleware to inject request id
 
 ## Inspired by..
 
