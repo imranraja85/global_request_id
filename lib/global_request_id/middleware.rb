@@ -1,3 +1,5 @@
+require "request_store"
+
 module GlobalRequestId
   class Middleware
     def initialize(app)
